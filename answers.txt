@@ -1,0 +1,18 @@
+ans-2
+2018-19 survey of more than 24,000 respondents across 12 states by CSDS-Lokniti & Azim Premji University. It asks the respondents about their views on homosexuality,I don't think that the full data is available on the internet but the conclusion is, many myths were busted in this article about homosexuality in India, it is in response to the Indian government's response in court during the debate regarding same sex marriage. Link-https://theprint.in/india/neither-urban-nor-elitist-what-data-shows-about-indians-views-on-same-sex-relationships/1529820/.
+
+ans-3 I couldn't access the database so I am not exactly sure what it is but I will use available information to answer the question
+Following is the tax_string of the tiger as a species 
+Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Laurasiatheria; Carnivora; Feliformia; Felidae; Panthera; Panthera tigris
+MySQL code for selecting the tigers 
+SELECT ALL
+FROM taxonomy
+WHERE tax_string LIKE '%Panthera tigris %';
+b)
+SELECT ncbi_id
+FROM taxonomy
+WHERE tax_string LIKE '%Panthera tigris sumatrae%';
+c)Taxonomy table and rfamseq can be connected by using nbi_id, to connect clan and rfamseq we can use description, to connect rfamseq and full_region we can use rfamseq_acc, rfam_acc can be used to connect family and full_region, clan_acc can be used to connect clan_membership and clan, several common columns can be identified bu the above can be used to pretty much connect all of them.
+
+4)I want to clariffy that Iam no that good at shell scripting, I did a course in linux in my first sem of college but I am not in practice so I took help of internet in this answer with the meaning of commands and the correct syntax for it , Iam a fast learner and it won't take me long so I am really hoping you consider this.
+curl -s https://amfiindia.com/spages/NAVAll.txt | awk -F ';' '{ print $4 "," $11 }' > output.csv
